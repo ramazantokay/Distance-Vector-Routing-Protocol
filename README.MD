@@ -16,7 +16,7 @@ The implementation consists of a single `Node.py` file that is run separately fo
 
 - Each node sends its initial distance vector to its immediate neighboring nodes.
 - When a node receives a distance vector update, it checks each node in the entire network.
-- For each node y, the distance to node y is updated based on the formula: `distx(y) = min {dist(x, v) + dist(v, y)}` for every v ∈ immediate neighbors of x.
+- For each node y, the distance to node y is updated based on the formula: `distx(y) = min {dist(x, v) + dist(v, y)}` for every v ∈ immediate neighbors of x. (Bellman-Ford Algorithm)
 - If this update causes any change in the distance vector, the node advertises its new distance vector to its immediate neighbors.
 - This distributed and asynchronous communication continues until there are no more updates on any of the nodes of the network.
 The algorithm terminates after 5 seconds of inactivity, indicating no further updates.
