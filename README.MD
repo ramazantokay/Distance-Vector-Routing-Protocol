@@ -28,6 +28,23 @@ The algorithm terminates after 5 seconds of inactivity, indicating no further up
 - Attempt to update the distance vector by using received distance vectors.
 - If no update happens for 5 seconds, close all connections and print the distance vector.
 
+## .costs File Format
+A `<port>.costs` file has the following format, where every line except the first is separated by a single space:
+```
+Total number of nodes in the network
+Port of immediate neighbor Distance to that neighbor
+Port of immediate neighbor Distance to that neighbor
+....
+```
+
+For instance, given the network above, the node on port 3001 has the following `3001.costs` file:
+```	
+3
+3000 5
+3002 7
+```
+
+
 ## Usage
 1. Clone the repository: 
 ```
