@@ -60,4 +60,4 @@ cd Distance-Vector-Routing-Protocol
 6. Additionally, you can test your implementation by running the "runner.sh" in the test_inputs folder. This script will run the nodes with the given inputs.
 
 ## Acknowledgements
-This project is based on the Go-Back-N protocol described in the textbook "Computer Networking: A Top-Down Approach" by James F. Kurose and Keith W. Ross.
+This project is based on the Distance-Vector Routing Protocol described in the textbook "Computer Networking: A Top-Down Approach" by James F. Kurose and Keith W. Ross.
